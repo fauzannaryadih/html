@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cart Checkout</title>
+    <style>
+        body {
+           height: 1000px;
+        }
+        .topnav {
+            background-color: silver;
+            height: 100px;
+            display: flex;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 15px;
+            height: 825px;
+        }
+
+        .border {
+            border: 2px solid #000;
+            border-radius: 2px;
+        }
+
+        .column1
+           flex: 80%;
+        }
+
+        .column2 {
+            flex: 20%;
+        }
+
+        .column1 .column2 {
+            padding: 0 20px;
+        }
+
+        .cart {
+            margin-right: 15px;
+            display: flex;
+        }
+
+        h4.thead {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .summary {
+            background-color: silver;
+            padding: 0 20px;
+            border-radius: 2px;
+            padding-bottom: 10px;
+          display: block;
+        }
+
+        span.price {
+            float: right;
+        }
+
+        .checkout {
+             background-color: #00f;
+            color: #fff;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+
+        .footer {
+            display: flex;
+            height: 75px;
+        }
+            
+        .subs {
+            display: flex;
+            background-color: #181818;
+            color: #fff;
+            border-radius: 0;
+            border: 1px #000;
+        }
+        th,
+        h2 {
+            text-align: left;
+        }
+        hr {
+            margin-right: 15px;
+        }
+     </style>
+</head>
+
+<body>
+    <div class="border" style="border-bottom: none">
+        </div class="topnav">
+            <div class="column1">
+                <img src="logoweb.png"alt="Site Name" width="20" height="20" />
+                <a href="#">Category 1</a>| <a href="#">Category 2</a>|
+                <a href="#">Category 3</a>
+            </div>
+            <div class="column2">
+                <i class="fa fa-shopping-cart"><</i>
+                <a href="#">Cart (1)</a>
+            </div>
+        </div>
+    </div>
+    <div class="border">
+        <div class="content">
+            <div class="column1">
+                <h4>Order 131217312</h4>
+                <h2>Thank You, Muhammad Maula!</h2>
+                <hr />
+                <p>Your order is confirmed.</p>
+                <p>We've accepted your order and we're getting it ready.</p>
+                <br />
+                <hr />
+                <table style="width: 100%">
+                    <caption>
+                        <h2>Customer Information</h2>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Shipping Address</th>
+                            <th>Billing Address</th>
+                        </tr>>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Muhammad Maula</td>
+                            <td>Muhammad Maula</td>
+                        </tr>
+                        <tr>
+                            <td>12 Waldo Point Road</td>
+                            <td>12 Waldo Point Road</td>
+                        </tr>
+                        <tr>
+                            <td>Mishouken, NY 11200</td>
+                            <td>Mishouken, NY 11200</td>
+                        </tr>
+                        <tr>
+                            <td>United States</td>
+                            <td>United States</td>
+                        </tr>
+
+                        <tr>
+                            <th>Shipping Method</th>
+                            <th>Payment Method</th>
+                        </tr>
+                        <tr>
+                            <td>UPS Ground (Estimated ship time of 2-8 days)</td>
+                            <td><i></i>>Ending in 3317 -$21.80</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr />
+            </div>
+            <div class="column2">
+                <div class="summary">
+                    <h4>Summary (1 item)</h4>
+                    <p>Subtotal<span class="price">$22.00</span></p>
+                    <p>Shipping<span class="price">-</span></p>
+                    <p>Est. Taxes<span class="price">-</span></p>
+                    <hr />
+                    <p>Total<span class="price" style="color: black">$22.00</span></p>
+                    <button class="checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border" style="border-top: none">
+        <div class="footer">
+            <div class="column1">
+                <a>Site Name</a>
+                <a href="#">Category X </a>| <a href="#">Category Y</a>|
+                <a href="#">Category Z </a>|
+            </div>
+            <div class="column2">
+                <label style="font-size: x-small">Stay in Touch! Join our Newsletter</label>
+                <nav style="display: inline-flex">
+                    <input type="email" placeholder="Enter Email" style="width: 100px" />
+                    <button type="submit" class="subs">Subscribe</button>
+                </nav> 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
