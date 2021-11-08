@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Profile</title>
+    <style>
+      @media screen and (max-width: 600px) {
+        .top,
+        .bot {
+          width: 100%;
+        }
+      }
+
+      body {
+        font-family: NotoSans, NotoSansJP, Helvetica, Arial, sans-serif;
+      }
+
+      .top {
+        float: left;
+      }
+
+      .left,
+      .right {
+        width: 25%;
+      }
+
+      .center {
+        width: 50%;
+      }
+
+      .content::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .gbr {
+        width: 177px;
+        height: 236px;
+        border: 1px solid black;
+        margin: 30px 10px 10px 10px;
+      }
+
+      .category a,
+      .category h3 {
+        display: block;
+        text-align: right;
+        padding: 2px;
+      }
+
+      .ket {
+        text-align: center;
+      }
+
+      .col {
+        float: left;
+        width: 33.33%;
+      }
+
+      .video video {
+        border: 1px solid grey;
+      }
+
+      img {
+        width: 180px;
+        height: 235px;
+        border: 1px solid gray;
+      }
+
+      .links a {
+        display: block;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <main>
+        <div class="left top">
+          <div class="gbr">
+            <img src="file:///C:/Users/LENOVO/Downloads/photo.me2.jpeg" alt="fotosaya" />
+          </div>
+        </div>
+        <div class="center top">
+          <h2>Fauzan Aryadih</h2>
+          <p>
+            0110121316<br />
+            Sistem Informasi 16 <br />
+            Live in Jakarta<br />
+            <a href="mailto:fauz21316si@student.nurulfikri.ac.id"
+              >fauz21316si@student.nurulfikri.ac.id</a
+            ><br />
+            6281315085635
+          </p>
+        </div>
+      </main>
+      <aside>
+        <nav class="category">
+          <h3>Categories</h3>
+          <a href="#">View Puncak Gunung</a>
+          <a href="#">Surah An-Naba</a>
+          <a href="#">Instagram,Github</a>
+        </nav>
+      </aside>
+    </div>
+    <div class="ket">
+      <h3>Tugas Pemrograman Web</h3>
+      <p>Ini adalah tugas pemrograman web yang saya buat.</p>
+    </div>
+    <div class="content">
+      <div class="col">
+        <fieldset class="video">
+          <video height="240%" poster="mata.jpg" width="320" controls>
+            <source src="file:///C:/Users/LENOVO/Documents/New%20folder/VID_21960417_072509_238.mp4" type="video/mp4">
+          </video>
+        </fieldset>
+      </div>
+      <div class="col">
+        <fieldset class="pic">
+          <div class="atas">
+            <audio controls loop>
+              <source src="file:///C:/Users/LENOVO/Documents/New%20folder/Surah%20An-Naba%20_%20Mufid.m4a">
+            </audio>
+            <br>
+          </div>
+        </fieldset>
+      </div>
+      <div class="col">
+        <fieldset class="links">
+          <legend>Links</legend>
+          <a href="https://www.instagram.com/fauzanaryadihh/" class="fa fa-instagram">
+            Instagram</a
+          >
+          <a href="https://github.com/fauzannaryadih" class="fa fa-github"> Github</a>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

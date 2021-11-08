@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Checkout Success</title>
+    <style>
+      .head,
+      .footer {
+        overflow: hidden;
+        max-width: 960px;
+        margin: auto;
+      }
+      .head a,
+      .footer a {
+        float: left;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 14px;
+      }
+      .head a.home,
+      .footer a.home {
+        color: black;
+      }
+      .head a.right,
+      .footer i.right {
+        float: right;
+      }
+      .footer i.right {
+        padding: 5px;
+      }
+      .content {
+        display: flex;
+        max-width: 960px;
+        margin: 50px auto;
+      }
+      .col-1 {
+        flex: 70%;
+      }
+      .col-2 {
+        flex: 30%;
+      }
+      .border {
+        border-bottom: 1px solid grey;
+      }
+      .ty {
+        display: flex;
+      }
+      .ty i {
+        font-size: 56px;
+        float: left;
+        padding: 16px 10px 16px 0;
+      }
+      .cust p {
+        margin: 10px 0 0 0;
+        padding: 10px 10px 0 10px;
+      }
+      .cust h4 {
+        margin: 0;
+        padding: 10px;
+      }
+      .row {
+        display: flex;
+      }
+      .col {
+        flex: 50%;
+      }
+      .summary {
+        background-color: aquamarine;
+        margin: 20px;
+        border-radius: 5px;
+      }
+      .pad {
+        padding: 1px 24px;
+      }
+      span.price {
+        float: right;
+      }
+      .code {
+        padding: 10px 0;
+      }
+      .inline-form {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+      }
+      .inline-form input {
+        width: 144px;
+        height: 0px;
+      }
+      .inline-form button {
+        border: 1px solid grey;
+        padding: 3px 4px;
+      }
+      label#small {
+        font-size: 11px;
+      }
+      .subs {
+        float: right;
+      }
+      .subs p {
+          font-size: small;
+          margin: 0;
+      }
+      .subs button {
+          border: 1px solid black;
+          background-color: black;
+          color: white;
+          padding: 2px 4px;
+      }
+      .subs input {
+          margin-right: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <a href="#" class="home">Site Name</a>
+      <a href="#">Category 1</a>
+      <a href="#">Category 2</a>
+      <a href="#">Category 3</a>
+      <a href="#" class="fa fa-shopping-cart right"> Cart (1)</a>
+      <a class="fa fa-search right"></a>
+    </header>
+    <main class="content">
+      <div class="col-1">
+        <div class="border">
+          <div class="ty">
+            <i class="fa fa-check-circle-o" id="check"></i>
+            <div class="cust">
+              <p>Order 131217312</p>
+              <h4>Thank You, Muhammad Maula Aidid!</h4>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <div class="confirm">
+            <p>
+              Your order is confirmed.<br />We've accepted your order and we're
+              getting it ready.
+            </p>
+          </div>
+        </div>
+        <div class="border">
+          <div class="info">
+            <h3>Customer Information</h3>
+            <div class="row">
+              <div class="col">
+                <p>
+                  <b>Shipping Adress</b><br />
+                  <b>Muhammad Maula Aidid </br><br />
+                  12 Waldo Point Road<br />
+                  Mishauken, NY 11200<br />
+                  United States
+                </p>
+                <p>
+                  <b>Shipping Method</b><br />
+                  Ups Ground (EST 3-6 days)
+                </p>
+              </div>
+              <div class="col">
+                <p>
+                  <b>Billing Adress</b><br />
+                  <b>Muhammad Maula Aidid </b><br />
+                  12 Waldo Point Road<br />
+                  Mishauken, NY 11200<br />
+                  United States
+                </p>
+                <p>
+                  <b>Payment Method</b><br />
+                  <i class="fa fa-cc-visa"> Ending in 3217 - $23.60</i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <aside class="right">
+          <div class="summary">
+            <div class="pad">
+              <div class="border">
+                <h4>Summary (1 Item)</h4>
+                <p>Subtotal <span class="price">$20.00</span></p>
+                <p>Shipping <span class="price">$2.20</span></p>
+                <p>Est. Taxes <span class="price">$1.40</span></p>
+              </div>
+              <div class="border">
+                <div class="code">
+                  <label for="code" id="small"
+                    >Gift card or discount code</label
+                  >
+                  <form class="inline-form">
+                    <input class="code" type="text" id="code" name="code" />
+                    <button type="submit">Apply</button>
+                  </form>
+                </div>
+              </div>
+              <p>
+                <b>Total <span class="price">$23.60</span></b>
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <div class="footer">
+      <a href="#" class="home">Site Name</a>
+      <a href="#">Category 1</a>
+      <a href="#">Category 2</a>
+      <a href="#">Category 3</a>
+      <div class="subs">
+        <p>Stay in Touch! Join our Newsletter</p>
+        <input name="subs" type="email" placeholder="Enter Email" />
+        <button type="submit">Subscribe</button>
+      </div>
+    </div>
+  </body>
+</html>
