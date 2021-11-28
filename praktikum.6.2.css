@@ -1,0 +1,28 @@
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+nav {
+    flex: 25%;
+    background-color: cadetblue;
+}
+.container {
+    flex: 75%;
+}
+header, footer {
+    height: 15vh;
+    background-color: yellowgreen;
+}
+.content {
+    display: flex;
+    height: 70vh;
+}
+article {
+    flex: 70%;
+    background-color: aquamarine;
+}
+aside {
+    flex: 30%;
+    background-color: brown;
+}

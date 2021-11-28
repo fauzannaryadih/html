@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;    
+}
+.flex, .flex1 {
+    justify-content: space-around;
+}
+.flex {
+    width: 33.33%;
+}
+img {
+    width: 100%;
+}

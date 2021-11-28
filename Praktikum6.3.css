@@ -1,0 +1,38 @@
+.main {
+    height: 100vh;
+  }
+header, footer {
+    background-color: aquamarine;
+    overflow: hidden;
+    height: 10vh;
+    margin: 10px;
+}
+.content {
+    display: flex;
+    height: 80vh;
+    margin: 10px;
+}
+aside {
+    flex: 20%;
+    background-color: blueviolet;
+    margin-right: 5px;
+}
+.article {
+    flex: 80%;
+    display: flex;
+    background-color: cadetblue;
+    margin-left: 5px;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.img-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.img {
+  padding: 10px 0;
+}
+img {
+  width: 90%;
+}
