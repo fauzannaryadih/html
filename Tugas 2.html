@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas2</title>
+</head>
+<body>
+    <div id="hasil" style="border: 1px solid black; width: 500px; height: 500px;"></div>
+    <input type="text" id="masukan">
+    <button onclick="simpan()">kirim</button>
+
+    <script>
+        let hasil = document.getElementById("hasil")
+        let masukan = document.getElementById("masukan")
+        let penampung = ""
+
+        function simpan() {
+            penampung += masukan.value + "<br>"
+            hasil.innerHTML = penampung
+            masukan.value = ""
+        }
+    </script>
+
+</body>
+</html>

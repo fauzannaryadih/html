@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2</title>
+</head>
+<body>
+    <input type="text" id="masuk" onchange="ubah()">
+
+    <select id="pilihan" onchange="ubah()">
+        <option value="">Pilihan</option>
+        <option value="Dollar Us">Dollar Us</option>
+        <option value="Dollar Singapore">Dollar Singapore</option>
+        <option value="Ringgit Malaysia">Ringgit Malaysia</option>
+        <option value="Yen Jepan">Yen Jepan</option>
+        <option value="Euro">Euro</option>
+        <option value="Riyal Arab Saudi">Riyal Arab Saudi</option>
+
+    </select>
+
+    <input type="text" id="keluar">
+
+    <script>
+        let masuk = document.getElementById("masuk")
+        let piilihan = document.getElementById("pilihan")
+        let keluar = document.getElementById("keluar")
+        let penampung
+
+        function ubah() {
+            if (piilihan.value == "Dollar Us") {
+                penampung = parseInt(masuk.value) * 9915
+            } else if (piilihan.value == "Dollar Singapore") {
+                penampung = parseInt(masuk.value) * 13472
+            } else if (piilihan.value == "Ringgit Malaysia") {
+                penampung = parseInt(masuk.value) * 874
+            }  else if (piilihan.value == "Yen Jepan") {
+                penampung = parseInt(masuk.value) * 120
+            } else if (piilihan.value == "Euro") {
+                penampung = parseInt(masuk.value) * 15888
+            } else if (piilihan.value == "Riyal Arab Saudi") {
+                penampung = parseInt(masuk.value) * 3592
+            }
+
+            keluar.value = "Rp.  " + penampung
+        }
+    </script>
+</body>
+</html>
